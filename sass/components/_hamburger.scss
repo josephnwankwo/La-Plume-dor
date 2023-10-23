@@ -1,0 +1,32 @@
+#checkbox {
+  display: none;
+
+  &:checked ~ .navigation__hamburger .navigation-icon,
+  &:checked + .wrap .navigation-button .navigation-icon {
+    background-color: transparent;
+  }
+
+  &:checked ~ .navigation__hamburger .navigation-icon::before,
+  &:checked + .wrap .navigation-button .navigation-icon::before {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  &:checked ~ .navigation__hamburger .navigation-icon::after,
+  &:checked + .wrap .navigation-button .navigation-icon::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+  }
+
+  &:checked ~ .navigation__list,
+  &:checked + .wrap .navigation__list {
+    // opacity: 1;
+    // visibility: visible;
+    transform: translateX(-0%);
+  }
+
+  &:checked ~ .navigation__list__background {
+    opacity: 1;
+    visibility: visible;
+  }
+}

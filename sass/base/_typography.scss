@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "TheNightWatch";
+  src: url(/asset/fonts/the-night-watch.ttf);
+}
+
+// h1
+.heading-pimary {
+  font-family: "TheNightWatch", serif;
+  text-transform: uppercase;
+  font-size: 14.8rem;
+  font-weight: 400;
+
+  @include respond(tab-land) {
+    font-size: 11.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 6rem;
+  }
+}
+
+// h2
+.heading-secondary {
+  text-align: center;
+  font-family: "TheNightWatch", serif;
+  font-size: 10rem;
+  font-weight: 400;
+
+  @include respond(phone) {
+    font-size: 6rem;
+  }
+}
+
+// h3
+.heading-tertiary {
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  font-weight: 400;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+// h4
+.heading-secondary_small {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+
+  @include respond(tab-land) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+// h5
+.heading-tertiary_small {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+// p
+.paragraph {
+  font-size: 2rem;
+  line-height: 140%;
+}
+
+// a
+.btn {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-yellow;
+  padding: 2rem 5rem;
+  border-radius: 5rem;
+}
+
+.btn-text {
+  font-size: 3rem;
+  color: $color-white;
+}
+
+.btn-brown {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-secondary;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+}

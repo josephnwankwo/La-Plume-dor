@@ -1,0 +1,874 @@
+.section__concept {
+  @include width_2;
+  @include padding;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 0rem;
+      align-items: unset;
+      justify-content: unset;
+    }
+
+    .left {
+      width: 90%;
+      :not(:nth-of-type(3)) {
+        margin-bottom: 4rem;
+      }
+
+      @include respond(tab-port) {
+        :nth-of-type(3) {
+          display: none;
+        }
+
+        :nth-of-type(1) {
+          margin-bottom: 5rem;
+        }
+      }
+
+      // @include respond(phone) {
+      //   text-align: center;
+      //   width: 90%;
+      //   margin: 0 auto;
+      //   :nth-of-type(2) {
+      //     display: none;
+      //   }
+
+      //   :nth-of-type(3) {
+      //     display: none;
+      //   }
+      // }
+    }
+
+    .right {
+      height: 40rem;
+      width: 100rem;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      img {
+        border-radius: 2rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.section__advantages {
+  @include width_1;
+  @include padding;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &__down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    .left {
+      :not(:nth-of-type(3)) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .right {
+      :not(:nth-of-type(3)) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .core {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+
+      img {
+        height: 100%;
+        width: 10rem;
+        object-fit: contain;
+      }
+
+      h5 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.section__discount {
+  background-color: $color-secondary;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+
+  h3 {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+}
+
+.section__menu {
+  @include width_3;
+  @include padding;
+
+  @include respond(tab-port) {
+    width: unset;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &__down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+    @include respond(phone) {
+      gap: 0rem;
+      flex-direction: column;
+
+      :not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    .chin {
+      height: 40rem;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 3rem;
+      position: relative;
+
+      a {
+        color: inherit;
+      }
+
+      h4 {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-wrap: nowrap;
+      }
+    }
+    .one {
+      background-image: url(/asset/img/soup.jpg);
+    }
+    .two {
+      background-image: url(/asset/img/main_dish.jpg);
+
+      h4 {
+        padding: 15rem 5rem;
+
+        @include respond(phone) {
+          padding: 18rem 20rem;
+        }
+      }
+    }
+    .three {
+      background-image: url(/asset/img/dessert.jpg);
+    }
+  }
+}
+
+.section__cocktails {
+  @include width_1;
+  @include padding;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &__down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    @include respond(tab-land) {
+      gap: 2rem;
+    }
+
+    @include respond(tab-port) {
+      gap: 0rem;
+    }
+
+    .arrow__left {
+      height: 4rem;
+      width: 4rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    .arrow__right {
+      height: 4rem;
+      width: 4rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 10rem;
+
+      @include respond(tab-port) {
+        gap: 5rem;
+      }
+
+      @include respond(phone) {
+        gap: 2rem;
+      }
+
+      .info {
+        height: 30rem;
+        width: 30rem;
+
+        @include respond(phone) {
+          height: 20rem;
+          width: 20rem;
+        }
+
+        h5 {
+          text-align: center;
+          background-color: $color-secondary;
+          border-radius: 3rem;
+          padding-block: 1rem;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 3rem;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.section__evenings {
+  margin-top: 25rem;
+  margin-bottom: 50rem;
+
+  @include respond(phone) {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 10rem;
+  }
+
+  &__down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    @include respond(tab-land) {
+      gap: 2rem;
+    }
+
+    @include respond(tab-port) {
+      gap: 0rem;
+    }
+
+    .arrow__left {
+      height: 4rem;
+      width: 4rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .arrow__right {
+      height: 4rem;
+      width: 4rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15rem;
+
+      @include respond(tab-port) {
+        gap: 12rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        gap: 8rem;
+      }
+
+      @include respond(phone) {
+        gap: 5rem;
+      }
+
+      :nth-of-type(2) {
+        transform: scale(1.5);
+
+        @include respond(phone) {
+          transform: scale(1.3);
+        }
+      }
+
+      &__info {
+        height: 25rem;
+        width: 25rem;
+
+        @include respond(phone) {
+          width: 20rem;
+          height: 20rem;
+        }
+
+        .con {
+          width: 80%;
+          height: fit-content;
+          margin: 0 auto;
+          background-color: $color-secondary;
+          padding: 2rem;
+          border-radius: 2rem;
+          transform: translateY(-25%);
+
+          h5 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            margin-bottom: 0.5rem;
+          }
+
+          figure {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2rem;
+          object-fit: cover;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+.section__book-table {
+  @include width_2;
+  @include padding;
+
+  @include respond(tab-port) {
+    width: unset;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &__down {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: unset;
+      align-content: unset;
+      gap: 0rem;
+    }
+
+    .block {
+      display: none;
+    }
+
+    @include respond(phone) {
+      .none {
+        display: none;
+      }
+
+      .block {
+        display: block;
+        align-self: center;
+      }
+    }
+
+    input {
+      background-color: $color-secondary;
+      border: none;
+      color: $color-white;
+    }
+
+    &-left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+
+      @include respond(tab-port) {
+        flex: none;
+      }
+
+      @include respond(phone) {
+        margin: 0 2rem 3rem;
+      }
+
+      #name {
+        height: 6rem;
+      }
+
+      #tel {
+        height: 6rem;
+      }
+
+      #text {
+        padding-bottom: 10rem;
+      }
+
+      input {
+        width: 50rem;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        @include respond(tab-port) {
+          width: 50rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 40rem;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+          border-radius: 5rem;
+          padding: 4rem;
+        }
+      }
+    }
+
+    &-right {
+      flex: 1;
+      @include respond(tab-port) {
+        flex: none;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        width: 50rem;
+
+        @include respond(phone) {
+          margin: 0 auto;
+          width: 80rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      #date {
+        width: 50rem;
+
+        @include respond(phone) {
+          width: 80rem;
+        }
+      }
+
+      input {
+        padding: 2rem;
+        border-radius: 2rem;
+
+        @include respond(tab-port) {
+          width: 50rem;
+        }
+
+        @include respond(phone) {
+          margin: 0 auto;
+          border-radius: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.section__chef {
+  @include padding;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &-bottom {
+    display: flex;
+    gap: 5rem;
+
+    .text-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      @include respond(phone) {
+        width: 50%;
+      }
+
+      p {
+        width: 100%;
+        background-color: $color-secondary;
+        padding: 2rem;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+
+      .bloc {
+        @include respond(phone) {
+          display: none;
+        }
+      }
+
+      strong {
+        font-family: "Allison", serif;
+        font-size: 10rem;
+        font-weight: 400;
+        transform: rotate(-5deg);
+
+        @media only screen and (max-width: 768px) {
+          font-size: 8rem;
+        }
+      }
+    }
+
+    .col {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    .imgs {
+      height: 60rem;
+      width: 70rem;
+
+      :nth-of-type(1) {
+        @include respond(phone) {
+          margin: 2rem;
+        }
+      }
+
+      @include respond(phone) {
+        width: 50%;
+      }
+
+      strong {
+        font-family: "Allison", serif;
+        font-size: 8rem;
+        font-weight: 400;
+        transform: rotate(-5deg);
+      }
+
+      .non {
+        display: none;
+
+        @include respond(phone) {
+          display: block;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.section__reviews {
+  @include width_1;
+  @include padding;
+
+  @include respond(phone) {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+    gap: 5rem;
+
+    @include respond(tab-land) {
+      gap: 1rem;
+    }
+
+    @include respond(tab-port) {
+      gap: 0rem;
+    }
+
+    .arrow-left {
+      height: 4rem;
+      width: 4rem;
+      @include respond(tab-port) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .arrow-right {
+      height: 4rem;
+      width: 4rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .contents {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10rem;
+
+      @include respond(tab-port) {
+        gap: 5rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        gap: 3rem;
+      }
+
+      .init {
+        width: 30rem;
+        // height: 30rem;
+        background-color: $color-secondary;
+        padding: 0rem 2rem 2rem;
+        border-radius: 2rem;
+
+        .head {
+          display: flex;
+          align-items: center;
+
+          .more-info {
+            h5 {
+              font-size: 2.5rem;
+            }
+
+            p {
+              font-size: 3rem;
+            }
+          }
+
+          .img_1 {
+            width: 10rem;
+            height: 10rem;
+
+            transform: translate(-4rem, -2rem);
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .para {
+          margin-bottom: 2rem;
+          font-size: 1.5rem;
+          line-height: 140%;
+        }
+
+        .img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section-findus {
+  @include width_3;
+  @include padding;
+
+  @include respond(tab-port) {
+    width: unset;
+    padding-left: 3rem;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  &_info {
+    display: flex;
+    gap: 10rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 0rem;
+    }
+
+    .location {
+      @include respond(phone) {
+        margin-bottom: 5rem;
+      }
+
+      h5 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        @include respond(phone) {
+          margin-bottom: 0rem;
+        }
+      }
+
+      &-1 {
+        margin-bottom: 10rem;
+
+        @include respond(phone) {
+          margin-bottom: 5rem;
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+        }
+      }
+
+      &-2 {
+        margin-bottom: 10rem;
+
+        @include respond(phone) {
+          margin-bottom: 5rem;
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+        }
+      }
+
+      &-3 {
+        @include respond(phone) {
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+        }
+      }
+    }
+
+    .map {
+      flex: 1;
+      height: 40rem;
+      width: 100%;
+      @include respond(phone) {
+        flex: unset;
+      }
+
+      iframe {
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="/asset/img/dish.jpg" type="img/icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allison&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>French Restaurant</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="popup-book" id="popup-book">
+        <div class="popup-book__content">
+          <a href="#header" class="popup-book__content-close">&times;</a>
+          <div class="popup-book__content-info">
+            <h3>Book a table</h3>
+            <p>Leave your details and we will call you back.</p>
+            <input
+              type="text"
+              name="popupname"
+              id="popupname"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name="popupnumber"
+              id="popupnumber"
+              placeholder="+234"
+            />
+            <a href="#" class="btn-brown">Reserve</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-review" id="popup-review">
+        <div class="popup-review__content">
+          <a href="#review" class="popup-review__content-close">&times;</a>
+          <div class="popup-review__content-info">
+            <h3>Leave a review</h3>
+            <input
+              type="text"
+              name="popupname"
+              id="popupname"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name="popupreview"
+              id="popupreview"
+              placeholder="review"
+            />
+            <p>
+              <span>General rating</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                />
+              </svg>
+            </p>
+            <a href="#" class="btn-brown">To send</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__background">
+        <div class="background_1"></div>
+        <div class="background_2">
+          <img src="/asset/img/hero.jpg" alt="Table Of Food" />
+        </div>
+      </div>
+      <nav class="navigation">
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <div class="navigation__info">
+          <div class="navigation__info-1">
+            <a href="index.html">
+              <img src="/asset/icon/feather.png" alt="feather" />
+            </a>
+          </div>
+          <div class="contain">
+            <div class="navigation__info-2">
+              <div class="img-12">
+                <img src="/asset/icon/location.png" alt="location" />
+              </div>
+              <p>28 Av. de Suffren, Paris</p>
+            </div>
+            <div class="navigation__info-3">
+              <div class="img-12">
+                <img src="/asset/icon/phone.png" alt="phone" />
+              </div>
+              <p>+33 85 36 23 38 02</p>
+            </div>
+          </div>
+        </div>
+        <div class="navigation__list__background"></div>
+        <ul class="navigation__list">
+          <div class="navigation__list-logo">
+            <img src="/asset/icon/facebook.png" alt="facebook" />
+            <img src="/asset/icon/instagram.png" alt="instagram" />
+            <img src="/asset/icon/tele.png" alt="tele" />
+          </div>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">concept</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">advantages</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">menu</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">cocktails</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">literary evenings</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">book a table</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">chef</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">reviews</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__anchor">how to find us?</a>
+          </li>
+        </ul>
+        <div class="navigation__hamburger">
+          <label for="checkbox" class="navigation-button">
+            <span class="navigation-icon">&nbsp;</span>
+          </label>
+        </div>
+      </nav>
+      <div class="header__main">
+        <h3 class="heading-tertiary">restaurant</h3>
+        <h1 class="heading-pimary">la plume d'or</h1>
+        <p class="paragraph">
+          Only today at 20:00 there will be a poetry evening with the famous
+          French writer Michel Houellebecq.
+        </p>
+        <a href="#popup-book" class="btn">book a table</a>
+      </div>
+      <div class="header__menu">
+        <div class="skew">
+          <p class="paragraph">see the<br />menu</p>
+          <span>&darr;</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__concept" id="concept">
+      <h2 class="heading-secondary">concept</h2>
+      <div class="section__concept__down">
+        <div class="left">
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            minima? Autem incidunt fugiat ullam repudiandae corporis! Eius
+            voluptas vero incidunt. Harum veniam numquam dolores labore fugit
+            suscipit voluptatem quas consequatur.
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            minima? Autem incidunt fugiat ullam repudiandae corporis! Eius
+            voluptas vero incidunt. Harum veniam numquam dolores labore fugit
+            suscipit voluptatem quas consequatur.
+          </p>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            minima? Autem incidunt fugiat ullam repudiandae corporis! Eius
+            voluptas vero incidunt. Harum veniam numquam dolores labore fugit
+            suscipit voluptatem quas consequatur.
+          </p>
+        </div>
+        <div class="right">
+          <img src="/asset/img/resturant.jpg" alt="restaurant" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__advantages" id="advantages">
+      <h2 class="heading-secondary">advantages</h2>
+      <div class="section__advantages__down">
+        <div class="left">
+          <div class="left_1 core">
+            <img src="/asset/icon/star.png" alt="star" />
+            <div class="text">
+              <h5 class="heading-tertiary_small">three Michelin stars</h5>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                incidunt, tempore dolorum, ipsum non ipsa praesentium nemo
+                ducimus maiores officiis facilis modi hic laborum neque libero
+                atque nihil. Ea, veniam!
+              </p>
+            </div>
+          </div>
+          <div class="left_2 core">
+            <img src="/asset/icon/serving-dish.png" alt="serving-dish" />
+            <div class="text">
+              <h5 class="heading-tertiary_small">author's kitchen</h5>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                incidunt, tempore dolorum, ipsum non ipsa praesentium nemo
+                ducimus maiores officiis facilis modi hic laborum neque libero
+                atque nihil. Ea, veniam!
+              </p>
+            </div>
+          </div>
+          <div class="left_3 core">
+            <img src="/asset/icon/books.png" alt="book" />
+            <div class="text">
+              <h5 class="heading-tertiary_small">literary atmosphere</h5>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                incidunt, tempore dolorum, ipsum non ipsa praesentium nemo
+                ducimus maiores officiis facilis modi hic laborum neque libero
+                atque nihil. Ea, veniam!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right_1 core">
+            <img src="/asset/icon/serving.png" alt="serving" />
+            <div class="text">
+              <h5 class="heading-tertiary_small">personal service</h5>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                incidunt, tempore dolorum, ipsum non ipsa praesentium nemo
+                ducimus maiores officiis facilis modi hic laborum neque libero
+                atque nihil. Ea, veniam!
+              </p>
+            </div>
+          </div>
+          <div class="right_2 core">
+            <img src="/asset/icon/drink.png" alt="drink" />
+            <div class="text">
+              <h5 class="heading-tertiary_small">bar</h5>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                incidunt, tempore dolorum, ipsum non ipsa praesentium nemo
+                ducimus maiores officiis facilis modi hic laborum neque libero
+                atque nihil. Ea, veniam!
+              </p>
+            </div>
+          </div>
+          <div class="right_3 core">
+            <img src="/asset/icon/basket.png" alt="book" />
+            <div class="text">
+              <h5 class="heading-tertiary_small">seasonal ingredient</h5>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                incidunt, tempore dolorum, ipsum non ipsa praesentium nemo
+                ducimus maiores officiis facilis modi hic laborum neque libero
+                atque nihil. Ea, veniam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__discount">
+      <h3 class="heading-tertiary">
+        get a 5% discount when booking a table online!
+      </h3>
+      <a href="#popup-book" class="btn">book a table</a>
+    </section>
+
+    <section class="section__menu" id="menu">
+      <h2 class="heading-secondary">menu</h2>
+      <div class="section__menu__down">
+        <div class="one chin">
+          <h4 class="heading-secondary_small">soup</h4>
+        </div>
+        <div class="two chin">
+          <a href="main-dish.html">
+            <h4 class="heading-secondary_small">main dishes</h4>
+          </a>
+        </div>
+        <div class="three chin">
+          <h4 class="heading-secondary_small">dessert</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__cocktails" id="cocktail">
+      <h2 class="heading-secondary">cocktails</h2>
+      <div class="section__cocktails__down">
+        <div class="arrow__left">
+          <img src="/asset/icon/arrow-one.png" alt="arrow" />
+        </div>
+        <div class="content">
+          <div class="info">
+            <img src="/asset/img/cocktail.jpg" alt="cocktail" />
+            <h5 class="heading-tertiary_small">aperol spritz</h5>
+          </div>
+          <div class="info">
+            <img src="/asset/img/cocktail.jpg" alt="cocktail" />
+            <h5 class="heading-tertiary_small">cosmopolitan</h5>
+          </div>
+          <div class="info">
+            <img src="/asset/img/cocktail.jpg" alt="cocktail" />
+            <h5 class="heading-tertiary_small">manhattan</h5>
+          </div>
+        </div>
+        <div class="arrow__right">
+          <img src="/asset/icon/arrow-two.png" alt="arrow" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__evenings" id="evenings">
+      <h2 class="heading-secondary">literary evenings</h2>
+      <div class="section__evenings__down">
+        <div class="arrow__left">
+          <img src="/asset/icon/arrow-one.png" alt="arrow" />
+        </div>
+        <div class="content">
+          <div class="content__info">
+            <img src="/asset/img/reading.jpg" alt="reading" />
+            <div class="con">
+              <h5>mark levy</h5>
+              <figure>August 10 at 19:00</figure>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                numquam magni omnis vero officia saepe sed ea, molestias
+              </p>
+            </div>
+          </div>
+          <div class="content__info">
+            <img src="/asset/img/reading.jpg" alt="reading" />
+            <div class="con">
+              <h5>mark levy</h5>
+              <figure>August 10 at 19:00</figure>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                numquam magni omnis vero officia saepe sed ea, molestias
+              </p>
+            </div>
+          </div>
+          <div class="content__info">
+            <img src="/asset/img/reading.jpg" alt="reading" />
+            <div class="con">
+              <h5>mark levy</h5>
+              <figure>August 10 at 19:00</figure>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                numquam magni omnis vero officia saepe sed ea, molestias
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="arrow__right">
+          <img src="/asset/icon/arrow-two.png" alt="arrow" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__book-table">
+      <h2 class="heading-secondary">book a table</h2>
+      <div class="section__book-table__down">
+        <div class="section__book-table__down-left">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="First and last name"
+          />
+          <input type="tel" name="tel" id="tel" placeholder="+234" />
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Additional wishes"
+          />
+          <a href="#popup-book" class="btn none">book a table</a>
+        </div>
+        <div class="section__book-table__down-right">
+          <div class="top">
+            <input type="number" name="amount" id="amount_of_people" />
+            <input type="time" name="time" id="time" />
+            <input type="month" name="month" id="month" />
+          </div>
+          <input type="date" name="date" id="date" />
+        </div>
+        <a href="#popup-book" class="btn block">book a table</a>
+      </div>
+    </section>
+
+    <section class="section__chef">
+      <h2 class="heading-secondary">chef<br />lucien dupont</h2>
+      <div class="section__chef-bottom">
+        <div class="imgs">
+          <img src="/asset/img/holding-soup.jpg" alt="holding-soup" />
+          <strong class="non">Lucien Dupont</strong>
+        </div>
+        <div class="text-info">
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            <br /><br /><br />
+            obcaecati repudiandae at hic magni. Lorem ipsum dolor sit amet
+            consectetur ducimus.<br /><br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          </p>
+          <strong class="bloc">Lucien Dupont</strong>
+        </div>
+        <div class="imgs col">
+          <img src="/asset/img/cooking.jpg" alt="cooking" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__reviews" id="review">
+      <h2 class="heading-secondary">reviews</h2>
+      <div class="section__reviews-infos">
+        <div class="arrow-left">
+          <img src="/asset/icon/arrow-one.png" alt="arrow" />
+        </div>
+        <div class="contents">
+          <div class="init">
+            <div class="head">
+              <div class="img_1">
+                <img src="/asset/img/reviews_1.jfif" alt="reviews_1" />
+              </div>
+              <div class="more-info">
+                <h5>Alex</h5>
+                <p>06.08.2023</p>
+              </div>
+            </div>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis voluptatibus temporibus velit commodi, nostrum rerum
+              officia enim quibusdam autem optio laboriosam quas, illo
+              dignissimos adipisci? Non eveniet voluptate cumque perspiciatis?
+            </p>
+            <div class="img">
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="init">
+            <div class="head">
+              <div class="img_1">
+                <img src="/asset/img/reviews_2.jfif" alt="reviews_1" />
+              </div>
+              <div class="more-info">
+                <h5>Janet</h5>
+                <p>06.08.2023</p>
+              </div>
+            </div>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis voluptatibus temporibus velit commodi, nostrum rerum
+              officia enim quibusdam autem optio laboriosam quas, illo
+              dignissimos adipisci? Non eveniet voluptate cumque perspiciatis?
+            </p>
+            <div class="img">
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="init">
+            <div class="head">
+              <div class="img_1">
+                <img src="/asset/img/reviews_3.jfif" alt="reviews_1" />
+              </div>
+              <div class="more-info">
+                <h5>Olga</h5>
+                <p>06.08.2023</p>
+              </div>
+            </div>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis voluptatibus temporibus velit commodi, nostrum rerum
+              officia enim quibusdam autem optio laboriosam quas, illo
+              dignissimos adipisci? Non eveniet voluptate cumque perspiciatis?
+            </p>
+            <div class="img">
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+              <img src="/asset/icon/star.png" alt="star" />
+            </div>
+          </div>
+        </div>
+        <div class="arrow-right">
+          <img src="/asset/icon/arrow-two.png" alt="arrow" />
+        </div>
+      </div>
+      <a href="#popup-review" class="btn">Leave a review</a>
+    </section>
+
+    <section class="section-findus">
+      <h2 class="heading-secondary">how to find us?</h2>
+      <div class="section-findus_info">
+        <div class="location">
+          <div class="location-1">
+            <h5>Address</h5>
+            <p class="paragraph">28 Av. de suffern, Paris</p>
+          </div>
+          <div class="location-2">
+            <h5>Phone number</h5>
+            <p class="paragraph">+2348095622454</p>
+          </div>
+          <div class="location-3">
+            <h5>Working hours</h5>
+            <p class="paragraph">12:00 - 00:00</p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.978652494197!2d3.3744420967895468!3d6.524379299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1696262155600!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer-anchor">Main</a>
+          </li>
+          <li class="footer__item">
+            <a href="#concept" class="footer-anchor">Concept</a>
+          </li>
+          <li class="footer__item">
+            <a href="#advantages" class="footer-anchor">Advantages</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <a href="index.html">
+            <img src="/asset/icon/feather.png" alt="feather" />
+          </a>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#menu" class="footer-anchor">Menu</a>
+          </li>
+          <li class="footer__item">
+            <a href="#cocktail" class="footer-anchor">cocktails</a>
+          </li>
+          <li class="footer__item">
+            <a href="#evenings" class="footer-anchor">literary evenings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <a href="#popup-book" class="btn-text">Book a table</a>
+        <div class="socials">
+          <img src="/asset/icon/facebook.png" alt="facebook" />
+          <img src="/asset/icon/instagram.png" alt="instagram" />
+          <img src="/asset/icon/tele.png" alt="tele" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

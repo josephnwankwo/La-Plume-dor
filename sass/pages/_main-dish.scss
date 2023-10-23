@@ -1,0 +1,111 @@
+.main-dishes__navigation {
+  padding-block: 1rem;
+  background-color: $color-secondary;
+  margin-bottom: 5rem;
+
+  .main-dishes__navigation-logo {
+    height: 10rem;
+    width: 10rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .main-dishes__navigation-Text {
+    font-size: 4rem;
+    font-family: "TheNightWatch", serif;
+    font-weight: 400;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .wrap {
+    @include width_1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-dish__header {
+  @include width-3;
+  padding-bottom: 15rem;
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .header-dishes {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 5rem;
+
+    &_img {
+      height: 20rem;
+      width: 30rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+      }
+    }
+
+    &_info {
+      .top {
+        display: flex;
+        align-items: center;
+
+        gap: 5rem;
+        margin-bottom: 3.5rem;
+
+        @include respond(phone) {
+          margin-bottom: 2rem;
+          text-wrap: nowrap;
+        }
+
+        h3 {
+          font-size: 3rem;
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+
+        p {
+          font-size: 1.5rem;
+          color: $color-dark-white;
+
+          @include respond(phone) {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .middle {
+        margin-bottom: 3.5rem;
+        font-size: 2rem;
+
+        @include respond(phone) {
+          margin-bottom: 2rem;
+        }
+
+        p {
+          color: $color-dark-white;
+        }
+      }
+
+      .end {
+        font-size: 5rem;
+
+        @include respond(phone) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
