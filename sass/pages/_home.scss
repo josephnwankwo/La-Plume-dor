@@ -148,12 +148,9 @@
     gap: 5rem;
 
     @include respond(phone) {
-      gap: 0rem;
+      gap: 2rem;
       flex-direction: column;
-
-      :not(:last-child) {
-        margin-bottom: 3rem;
-      }
+      padding: 2rem;
     }
 
     .chin {
@@ -164,10 +161,7 @@
       background-position: center;
       border-radius: 3rem;
       position: relative;
-
-      a {
-        color: inherit;
-      }
+      color: inherit;
 
       h4 {
         text-align: center;
@@ -178,20 +172,15 @@
         text-wrap: nowrap;
       }
     }
+
     .one {
       background-image: url(/asset/img/soup.jpg);
     }
+
     .two {
       background-image: url(/asset/img/main_dish.jpg);
-
-      h4 {
-        padding: 15rem 5rem;
-
-        @include respond(phone) {
-          padding: 18rem 20rem;
-        }
-      }
     }
+
     .three {
       background-image: url(/asset/img/dessert.jpg);
     }
@@ -573,6 +562,11 @@
     display: flex;
     gap: 5rem;
 
+    @include respond(phone) {
+      gap: 2rem;
+      padding: 2rem;
+    }
+
     .text-info {
       display: flex;
       align-items: center;
@@ -583,16 +577,12 @@
         width: 50%;
       }
 
-      p {
+      .feedback {
         width: 100%;
         background-color: $color-secondary;
         padding: 2rem;
         border-radius: 2rem;
         margin-bottom: 2rem;
-
-        @include respond(phone) {
-          width: 100%;
-        }
       }
 
       .bloc {
@@ -623,12 +613,6 @@
       height: 60rem;
       width: 70rem;
 
-      :nth-of-type(1) {
-        @include respond(phone) {
-          margin: 2rem;
-        }
-      }
-
       @include respond(phone) {
         width: 50%;
       }
@@ -638,6 +622,14 @@
         font-size: 8rem;
         font-weight: 400;
         transform: rotate(-5deg);
+        white-space: nowrap;
+
+        @include respond(phone) {
+          display: inline-block;
+          margin-top: 2rem;
+          font-size: 5.5rem;
+          text-align: center;
+        }
       }
 
       .non {
@@ -653,6 +645,7 @@
         height: 100%;
         border-radius: 2rem;
         object-fit: cover;
+        object-position: 80% 50%;
       }
     }
   }
@@ -796,6 +789,11 @@
   @include respond(tab-port) {
     width: unset;
     padding-left: 3rem;
+  }
+
+  @include respond(tab-port) {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   h2 {

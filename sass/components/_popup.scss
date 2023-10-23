@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  backdrop-filter: blur(0.2rem);
+  backdrop-filter: blur(3px);
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
@@ -30,30 +30,54 @@
 
     &-close {
       color: $color-white;
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      position: absolute;
+      top: -1rem;
+      right: -2rem;
+
+      span {
+        display: inline-block;
+        font-size: 2.5rem;
+      }
+
       &:link,
       :visited {
         background-color: $color-yellow;
-        border-radius: 50%;
-        padding: 0.2rem;
-        position: absolute;
-        top: -1rem;
-        right: -2rem;
         font-size: 5rem;
         text-decoration: none;
-        display: inline-block;
         line-height: 0.5;
+      }
+
+      @include respond(phone) {
+        height: 5rem;
+        width: 5rem;
+        top: -3rem;
+        right: -4rem;
+
+        span {
+          font-size: 3rem;
+        }
       }
     }
 
     &-info {
-      height: max-content;
-      width: 30rem;
-      padding-block: 2rem;
+      width: max(30rem, 100vw/3.5);
+      padding-block: 3rem;
+      padding-inline: 5rem;
       border-radius: 4rem;
       display: flex;
       align-items: center;
       flex-direction: column;
       background-color: $color-yellow;
+
+      @include respond(phone) {
+        width: 90vw;
+      }
 
       h3 {
         font-size: 2rem;
@@ -73,6 +97,28 @@
         border: 1px solid $color-secondary;
         padding: 1rem 1rem;
         margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      .rating {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+          margin: 0 !important;
+        }
+
+        svg {
+          cursor: pointer;
+          height: 1.5rem;
+          width: 1.5rem;
+
+          path {
+            fill: $color-white;
+          }
+        }
       }
 
       #popupname {

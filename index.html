@@ -27,7 +27,9 @@
     <header class="header" id="header">
       <div class="popup-book" id="popup-book">
         <div class="popup-book__content">
-          <a href="#header" class="popup-book__content-close">&times;</a>
+          <a href="#header" class="popup-book__content-close">
+            <span>&times;</span>
+          </a>
           <div class="popup-book__content-info">
             <h3>Book a table</h3>
             <p>Leave your details and we will call you back.</p>
@@ -48,7 +50,61 @@
         </div>
       </div>
 
-      <div class="popup-review" id="popup-review">
+      <div class="popup-book" id="popup-review">
+        <div class="popup-book__content">
+          <a href="#review" class="popup-book__content-close">
+            <span>&times;</span>
+          </a>
+          <div class="popup-book__content-info">
+            <h3>Leave a review</h3>
+            <input
+              type="text"
+              name="popupname"
+              id="popupname"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              name="popupreview"
+              id="popupreview"
+              placeholder="review"
+            />
+            <div class="rating">
+              <p class="paragraph">General rating</p>
+              <div class="rating-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="btn-brown">To send</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="popup-review" id="popup-review">
         <div class="popup-review__content">
           <a href="#review" class="popup-review__content-close">&times;</a>
           <div class="popup-review__content-info">
@@ -68,31 +124,26 @@
             <p>
               <span>General rating</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
                   d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
                 />
               </svg>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
                   d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
                 />
               </svg>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
                   d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
                 />
               </svg>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
                   d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
                 />
               </svg>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
                   d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
                 />
@@ -101,7 +152,8 @@
             <a href="#" class="btn-brown">To send</a>
           </div>
         </div>
-      </div>
+      </div> -->
+
       <div class="header__background">
         <div class="background_1"></div>
         <div class="background_2">
@@ -121,13 +173,13 @@
               <div class="img-12">
                 <img src="/asset/icon/location.png" alt="location" />
               </div>
-              <p>28 Av. de Suffren, Paris</p>
+              <p class="paragraph">28 Av. de Suffren, Paris</p>
             </div>
             <div class="navigation__info-3">
               <div class="img-12">
                 <img src="/asset/icon/phone.png" alt="phone" />
               </div>
-              <p>+33 85 36 23 38 02</p>
+              <p class="paragraph">+33 85 36 23 38 02</p>
             </div>
           </div>
         </div>
@@ -310,17 +362,15 @@
     <section class="section__menu" id="menu">
       <h2 class="heading-secondary">menu</h2>
       <div class="section__menu__down">
-        <div class="one chin">
+        <a href="main-dish.html" class="one chin">
           <h4 class="heading-secondary_small">soup</h4>
-        </div>
-        <div class="two chin">
-          <a href="main-dish.html">
+        </a>
+        <a href="main-dish.html" class="two chin">
             <h4 class="heading-secondary_small">main dishes</h4>
-          </a>
-        </div>
-        <div class="three chin">
+        </a>
+        <a href="main-dish.html" class="three chin">
           <h4 class="heading-secondary_small">dessert</h4>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -436,13 +486,23 @@
           <strong class="non">Lucien Dupont</strong>
         </div>
         <div class="text-info">
-          <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            <br /><br /><br />
-            obcaecati repudiandae at hic magni. Lorem ipsum dolor sit amet
-            consectetur ducimus.<br /><br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-          </p>
+          <div class="feedback">
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate at perspiciatis, tenetur possimus non nesciunt facere
+              molestiae porro eos, velit sit iste accusantium vero placeat.
+            </p>
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate at perspiciatis, tenetur possimus non nesciunt facere
+              molestiae porro eos, velit sit iste accusantium vero placeat.
+            </p>
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate at perspiciatis, tenetur possimus non nesciunt facere
+              molestiae porro eos, velit sit iste accusantium vero placeat.
+            </p>
+          </div>
           <strong class="bloc">Lucien Dupont</strong>
         </div>
         <div class="imgs col">
