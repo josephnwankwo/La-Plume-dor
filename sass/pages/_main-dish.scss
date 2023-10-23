@@ -14,7 +14,7 @@
 
   .main-dishes__navigation-Text {
     font-size: 4rem;
-    font-family: "TheNightWatch", serif;
+    font-family: 'TheNightWatch', serif;
     font-weight: 400;
 
     @include respond(phone) {
@@ -43,6 +43,10 @@
     display: flex;
     gap: 5rem;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      gap: 3rem;
+    }
 
     &_img {
       height: 20rem;

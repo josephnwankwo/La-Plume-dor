@@ -11,6 +11,10 @@
 @mixin width_3 {
   width: min(70vw, 135rem);
   margin: 0 auto;
+  
+  @include respond(phone) {
+    width: min(90vw, 135rem);
+  }
 }
 
 @mixin padding {
