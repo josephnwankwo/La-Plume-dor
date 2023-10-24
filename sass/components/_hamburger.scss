@@ -4,6 +4,7 @@
   &:checked ~ .navigation__hamburger .navigation-icon,
   &:checked + .wrap .navigation-button .navigation-icon {
     background-color: transparent;
+    position: fixed;
   }
 
   &:checked ~ .navigation__hamburger .navigation-icon::before,
@@ -20,8 +21,6 @@
 
   &:checked ~ .navigation__list,
   &:checked + .wrap .navigation__list {
-    // opacity: 1;
-    // visibility: visible;
     transform: translateX(-0%);
   }
 
