@@ -4,6 +4,9 @@
   &:checked ~ .navigation__hamburger .navigation-icon,
   &:checked + .wrap .navigation-button .navigation-icon {
     background-color: transparent;
+  }
+
+  &:checked ~ .navigation__hamburger .navigation-button {
     position: fixed;
   }
 
