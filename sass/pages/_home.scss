@@ -282,8 +282,8 @@
 }
 
 .section__evenings {
-  margin-top: 25rem;
-  margin-bottom: 50rem;
+  padding-top: 25rem;
+  padding-bottom: 40rem;
 
   @include respond(phone) {
     display: none;
@@ -611,7 +611,6 @@
 
     .imgs {
       height: 60rem;
-      width: 70rem;
 
       @include respond(phone) {
         width: 50%;
