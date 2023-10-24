@@ -2,7 +2,6 @@
   @include width_1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 5rem;
   padding: 2rem 0;
 
@@ -114,6 +113,8 @@
     transition-property: transform;
     padding: 3rem;
 
+ 
+
     @include respond(phone) {
       width: 60%;
     }
@@ -167,10 +168,9 @@
   }
 
   &-button {
-    position: fixed;
+    position: relative;
     height: 5rem;
     width: 5rem;
-    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,7 @@
   &-icon {
     width: 5rem;
     transition: background-color 300ms ease;
+    
 
     &,
     &::after,
@@ -209,7 +210,7 @@
     }
 
     &::after {
-      bottom: 25%;
+      bottom: 25% !important;
     }
   }
 }
